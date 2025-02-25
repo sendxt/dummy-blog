@@ -10,7 +10,7 @@ services:
       - '9000:9000'
     volumes:
       - ./:/var/www:rw,cached
-    entrypoint: ["/bin/sh", "-c", "composer install --no-scripts --no-interaction && php-fpm"]
+    entrypoint: ["/bin/sh", "-c", "composer install --no-scripts --no-interaction && bin/console cache:clear && yarn install && yarn encore dev && php-fpm"]
 
   nginx:
     container_name: nginx
