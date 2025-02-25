@@ -5,7 +5,7 @@ The instruction understands what you have installed on your pc docker and docker
 ```
 git clone git@github.com:sendxt/dummy-blog.git
 
-cd blog
+cd dummy-blog
 
 docker-compose build --no-cache
 docker-compose up -d
