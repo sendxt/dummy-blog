@@ -1,9 +1,9 @@
-# Symfony dependency injection component with docker containers
+# Dummy blog
 
 The instruction understands what you have installed on your pc docker and docker-compose
 
 ```
-git clone git@github.com:sendxt/blog.git
+git clone git@github.com:sendxt/dummy-blog.git
 
 cd blog
 
@@ -16,4 +16,4 @@ docker-compose up -d
 
 ...
 
-Open your browser and page localhost:8080 you'll see var_dump result of generators with applied random converter to them
+Open your browser and page http://0.0.0.0:8080/blog and you will see responsive dummy blog

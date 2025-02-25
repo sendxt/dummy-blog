@@ -14,6 +14,7 @@ class BlogController extends AbstractController
     #[Route('/blog', name: 'blog_index')]
     public function index(): Response
     {
+        //TODO: cache
         return $this->render(
             'blog/index.html.twig',
             [
