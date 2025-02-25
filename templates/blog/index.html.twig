@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dummy Posts{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% for post in posts %}
+            <div class="post">
+                {% if post.image %}
+                    <img src="{{ post.image }}" alt="{{ post.title }}" class="post-image">
+                {% endif %}
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.body }}</p>
+                <div class="post-meta">
+                    <a href="{{ post.link }}" class="comment-link">Skaityti daugiau</a>
+                    <span class="comments">Comments: {{ post.commentCount|default(0) }}</span>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
