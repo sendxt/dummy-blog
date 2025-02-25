@@ -18,7 +18,7 @@ class BlogController extends AbstractController
         return $this->render(
             'blog/index.html.twig',
             [
-                'posts' => $this->blogPostFetcher->fetchPosts()->getPosts()
+                'posts' => $this->blogPostFetcher->fetch()->getPosts()
             ]
         );
     }

@@ -17,7 +17,7 @@ class BlogPostFetcher
     ) {
     }
 
-    public function fetchPosts(): BlogPostListDto
+    public function fetch(): BlogPostListDto
     {
         try {
             $response = $this->blogApiClient->request('GET', Endpoint::GET_POSTS);
